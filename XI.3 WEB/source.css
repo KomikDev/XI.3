@@ -1,0 +1,92 @@
+.slideshow-container {
+    max-width: 800px;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.mySlides {
+    display: none; 
+    position: relative;
+    width: 100%
+    padding-bottom: 75%;
+}
+.mySlides img {
+    width: 100%;
+    aspect-ratio: 4 / 3;  /* rasio tetap, tinggi otomatis menyesuaikan lebar layar */
+    object-fit: cover;    /* foto dipotong rapi mengisi kotak, tidak gepeng */
+    display: block;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+    border: none;
+    font-family: inherit;
+    line-height: 1;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+.next { right: 0; border-radius: 3px 0 0 3px; }
+.prev { left: 0; }
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.6); }
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s;
+}
+.dot.active, .dot:hover { background-color: #717171; }
+.fade { animation-name: fade; animation-duration: 1s; }
+@keyframes fade {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+.site-footer { text-align: center; padding: 30px 0; }
+
+/* ====== RESPONSIVE: layar sedang (tablet) ====== */
+@media screen and (max-width: 768px) {
+    .slideshow-container { max-width: 95%; }
+}
+
+/* ====== RESPONSIVE: layar kecil (HP) ====== */
+@media screen and (max-width: 480px) {
+    .slideshow-container { max-width: 100%; border-radius: 0; }
+    .prev, .next { padding: 10px; font-size: 14px; margin-top: -16px; }
+    .numbertext { font-size: 11px; padding: 6px 8px; }
+    .text { font-size: 13px; padding: 8px; }
+    .dot { height: 10px; width: 10px; }
+}

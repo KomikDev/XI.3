@@ -1,0 +1,130 @@
+section{
+  min-height: 500px;
+}
+#section-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#home-banner{
+  background-image: url('../database/gallery/fotbar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 680px;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_img,
+.banner-inner,
+.banner-content{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.web-title{
+  font-size: clamp(20px, 5vw, 42px);
+  color: #fff;
+  word-wrap: break-word;
+  margin: 0 0 20px 0;
+}
+.banner-logo{
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.centered-btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  #home-banner{
+    min-height: 420px;
+    padding: 40px 16px;
+  }
+  .banner-logo{
+    width: 140px;
+  }
+}
+#gallery{
+  color: white;
+  background-image: white;
+  min-height: 450px;
+  padding: 20px;
+}
+#reason{
+  color: white;
+  background-color: #0279C3;
+  min-height: 450px;
+  padding: 20px;
+}
+#testimoni img{
+  border-radius: 400px;
+  width:35%;
+  min-width: 175px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mentor img{
+  border-radius: 20px;
+  width: 125px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  margin: 15px;
+}
+#testimoni .grid-content{
+  background-color: #EFEFEF;
+  margin: 10px auto;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 18px;
+}
+#mentor{
+  display:inline-block;
+  vertical-align:top;
+  max-width: 100%;
+}
+#mentor .grid-content{
+  border-radius: 18px;
+}
+#mentor h3{
+  margin-bottom: 5px;
+}
+#mentor p{
+  display:block;
+  float: none;
+}
+#pendaftaran{
+  padding-bottom: 50px;
+  background-image: url('../../assets/img/bg-decorative-darkblue.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pendaftaran h2#section-title{
+  margin-top: 0px;
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid.centered{
+  text-align: center;
+}
+.grid-content{
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
